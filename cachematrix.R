@@ -27,7 +27,7 @@ makeCacheMatrix <- function(z = matrix()) {
 ## matrix has not changed), then it should retrieve the inverse from the cache.
 
 cacheSolve <- function(z, ...) {
-  ## Return a matrix that is the inverse of 'z'
+  ## Return a matrix that is inverse of 'z'
   inver <- z$getInverse()
   if (!is.null(inver)) {
     message("getting cached data")
